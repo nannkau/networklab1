@@ -1,0 +1,10 @@
+banana;chuối
+red;màu đỏ
+chicken;gà
+haha;ok
+blue;màu xanh
+cat;mèo
+go;đi
+huhu;not ok
+dog;chó
+home;nhà
