@@ -47,8 +47,6 @@ public class Server {
                     System.err.println(i);
                 }
             }
-            System.out.println("Write data to file");
-            
             System.out.println("Closing connection");
 
             in.close();
@@ -61,6 +59,7 @@ public class Server {
             System.out.println(i);
         }
         finally {
+           System.out.println("Write data to file");
            writeToFile(map);
          }
     }
