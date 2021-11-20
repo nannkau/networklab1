@@ -102,9 +102,15 @@ public class Server {
             }
             else {
                 if(map.get(line)!=null){
-                    String data=line+":"+map.get(line);
-                    mapDTO.setNotification(data.toString());
-                    mapDTO.setStringMap(map);
+                    map.forEach((key,value)->{
+                        if(key.equals(line)) {
+                            String data=line+":"+value;
+                            mapDTO.setNotification(data.toString());
+                            mapDTO.setStringMap(map);
+                        }
+
+
+                    });
                 }
                 else {
                     map.forEach((key,value)->{
