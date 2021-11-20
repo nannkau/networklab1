@@ -48,7 +48,7 @@ public class Server {
                 }
             }
             System.out.println("Write data to file");
-            writeToFile(map);
+            
             System.out.println("Closing connection");
 
             in.close();
@@ -60,6 +60,9 @@ public class Server {
         {
             System.out.println(i);
         }
+        finally {
+           writeToFile(map);
+         }
     }
     public MapDTO getData(String line,Map<String,String> map){
         MapDTO mapDTO= new MapDTO();
